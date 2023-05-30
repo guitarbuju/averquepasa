@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: gerardo
+      MONGO_INITDB_ROOT_PASSWORD: Heavymetal
+      MONGO_DATABASE_NAME: unapp
+    ports:
+      - "27023:27017"
